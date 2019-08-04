@@ -15,6 +15,7 @@ class ButtonCollectionViewController: UIViewController {
     @IBOutlet weak var testThreeLabel: UILabel!
     @IBOutlet weak var testFourLabel: UILabel!
     @IBOutlet weak var testFiveLabel: UILabel!
+    @IBOutlet weak var testSixLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,16 +48,46 @@ class ButtonCollectionViewController: UIViewController {
         testFiveLabel.text = "#5 успешно"
     }
     
+    @IBAction func testSixActionSheetButton(_ sender: UIButton) {
+        showActionSheet()
+    }
+    
+    
     // MARK: - Methods
     
     func showAlert() {
         let alert = UIAlertController(title: "Никола Тесла", message: "Изобрел электродвигатель, генератор, многофазные системы, работающие на переменном токе.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Отменить", style: .default, handler: nil))
         
         alert.addAction(UIAlertAction(title: "Спасибо", style: .default, handler: { action in
             self.testFourLabel.text = "#4 успешно"
         }))
         
         self.present(alert, animated: true)
+    }
+    
+    func showActionSheet() {
+            let alert = UIAlertController(title: "Action Sheet Title", message: "Please Select an Option", preferredStyle: .actionSheet)
+            alert.addAction(UIAlertAction(title: "Approve", style: .default, handler: { (_) in
+                self.testSixLabel.text = "#6 успешно"
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Edit", style: .default, handler: { (_) in
+                print("User click Edit button")
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (_) in
+                print("User click Delete button")
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: { (_) in
+                print("User click Dismiss button")
+            }))
+            
+            self.present(alert, animated: true, completion: {
+                print("completion block")
+            })
     }
 
 }

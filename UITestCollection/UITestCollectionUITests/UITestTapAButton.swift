@@ -57,6 +57,15 @@ class UITestTapAButton: XCTestCase {
         XCTAssert(app.staticTexts["#5 успешно"].exists)
     }
     
+    func testSixTapAnActionSheetButton() {
+        app.buttons["Button"].tap()
+        app.buttons["Show action sheet"].tap()
+        XCTAssert(app.staticTexts["Action Sheet Title"].exists)
+        app.buttons["Approve"].tap()
+        XCTAssert(!app.staticTexts["Action Sheet Title"].exists)
+        XCTAssert(app.staticTexts["#6 успешно"].exists)
+    }
+    
 }
 
 
