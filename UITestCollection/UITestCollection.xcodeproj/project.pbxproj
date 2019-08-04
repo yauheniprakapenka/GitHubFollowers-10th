@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */; };
-		3ED44C2622F6DE0100E1A98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C2522F6DE0100E1A98C /* ViewController.swift */; };
+		3ED44C2622F6DE0100E1A98C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */; };
 		3ED44C2922F6DE0100E1A98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2722F6DE0100E1A98C /* Main.storyboard */; };
 		3ED44C2B22F6DE0200E1A98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */; };
 		3ED44C2E22F6DE0200E1A98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */; };
-		3ED44C3922F6DE0200E1A98C /* UITestCollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* UITestCollectionUITests.swift */; };
+		3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */; };
+		3ED44C4422F6E89200E1A98C /* ButtonTestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +29,15 @@
 /* Begin PBXFileReference section */
 		3ED44C2022F6DE0100E1A98C /* UITestCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ED44C2522F6DE0100E1A98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3ED44C2822F6DE0100E1A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED44C2D22F6DE0200E1A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED44C2F22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ED44C3422F6DE0200E1A98C /* UITestCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ED44C3822F6DE0200E1A98C /* UITestCollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestCollectionUITests.swift; sourceTree = "<group>"; };
+		3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTapAButton.swift; sourceTree = "<group>"; };
 		3ED44C3A22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */,
-				3ED44C2522F6DE0100E1A98C /* ViewController.swift */,
+				3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */,
+				3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */,
 				3ED44C2722F6DE0100E1A98C /* Main.storyboard */,
 				3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */,
 				3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */,
@@ -90,7 +93,7 @@
 		3ED44C3722F6DE0200E1A98C /* UITestCollectionUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3ED44C3822F6DE0200E1A98C /* UITestCollectionUITests.swift */,
+				3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */,
 				3ED44C3A22F6DE0200E1A98C /* Info.plist */,
 			);
 			path = UITestCollectionUITests;
@@ -197,7 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED44C2622F6DE0100E1A98C /* ViewController.swift in Sources */,
+				3ED44C4422F6E89200E1A98C /* ButtonTestViewViewController.swift in Sources */,
+				3ED44C2622F6DE0100E1A98C /* MenuViewController.swift in Sources */,
 				3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED44C3922F6DE0200E1A98C /* UITestCollectionUITests.swift in Sources */,
+				3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
