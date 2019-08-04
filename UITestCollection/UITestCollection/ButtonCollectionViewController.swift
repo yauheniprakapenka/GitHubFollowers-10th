@@ -8,12 +8,13 @@
 
 import UIKit
 
-class ButtonCollectionViewViewController: UIViewController {
+class ButtonCollectionViewController: UIViewController {
     
     @IBOutlet weak var testOneLabel: UILabel!
     @IBOutlet weak var testTwoLabel: UILabel!
     @IBOutlet weak var testThreeLabel: UILabel!
     @IBOutlet weak var testFourLabel: UILabel!
+    @IBOutlet weak var testFiveLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,12 @@ class ButtonCollectionViewViewController: UIViewController {
     @IBAction func testFourShowAlertButton(_ sender: UIButton) {
         showAlert()
     }
+    
+    @IBAction func testFiveNavigationBarButton(_ sender: UIButton) {
+        testFiveLabel.text = "#5 успешно"
+    }
+    
+    // MARK: - Methods
     
     func showAlert() {
         let alert = UIAlertController(title: "Никола Тесла", message: "Изобрел электродвигатель, генератор, многофазные системы, работающие на переменном токе.", preferredStyle: .alert)

@@ -46,7 +46,17 @@ class UITestTapAButton: XCTestCase {
         XCTAssert(!app.staticTexts["Никола Тесла"].exists)
         XCTAssert(app.staticTexts["#4 успешно"].exists)
     }
-
+    
+    func testFiveTapANavigationBarButton() {
+        app.buttons["Button"].tap()
+        XCTAssert(app.staticTexts["Нажать на кнопку в Navigation Bar"].exists)
+        app.buttons["Категория"].tap()
+        XCTAssert(!app.staticTexts["Нажать на кнопку в Navigation Bar"].exists)
+        app.buttons["Button"].tap()
+        app.buttons["NavigationBarButton"].tap()
+        XCTAssert(app.staticTexts["#5 успешно"].exists)
+    }
+    
 }
 
 
