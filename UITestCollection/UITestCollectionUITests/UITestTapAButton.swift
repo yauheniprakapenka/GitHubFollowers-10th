@@ -20,16 +20,24 @@ class UITestTapAButton: XCTestCase {
     override func tearDown() {
     }
 
-    func testTapAButtonWithIdentifier() {
+    func testOneTapAButtonWithIdentifier() {
         app.buttons["Tap a button"].tap()
         app.buttons["buttonWithIdentifier"].tap()
-        XCTAssert(app.staticTexts["#1 нажато"].exists)
+        XCTAssert(app.staticTexts["#1 успешно"].exists)
     }
     
-    func testTapAButtonWithoutIdentifier() {
+    func testTwoTapAButtonWithoutIdentifier() {
         app.buttons["Tap a button"].tap()
         app.buttons["Button without identifier"].tap()
-        XCTAssert(app.staticTexts["#2 нажато"].exists)
+        XCTAssert(app.staticTexts["#2 успешно"].exists)
+    }
+    
+    func testThreeTapAButtonWithoutIdentifier() {
+        app.buttons["Tap a button"].tap()
+        app.buttons["Button with some name"].firstMatch.tap()
+        XCTAssert(app.staticTexts["#3 успешно"].exists)
     }
 
 }
+
+
