@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ButtonTestViewViewController: UIViewController {
+class ButtonCollectionViewViewController: UIViewController {
     
     @IBOutlet weak var testOneLabel: UILabel!
     @IBOutlet weak var testTwoLabel: UILabel!
     @IBOutlet weak var testThreeLabel: UILabel!
+    @IBOutlet weak var testFourLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,18 @@ class ButtonTestViewViewController: UIViewController {
         testThreeLabel.text = "#3 не успешно"
     }
     
+    @IBAction func testFourShowAlertButton(_ sender: UIButton) {
+        showAlert()
+    }
     
+    func showAlert() {
+        let alert = UIAlertController(title: "Никола Тесла", message: "Изобрел электродвигатель, генератор, многофазные системы, работающие на переменном токе.", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Спасибо", style: .default, handler: { action in
+            self.testFourLabel.text = "#4 успешно"
+        }))
+        
+        self.present(alert, animated: true)
+    }
 
 }

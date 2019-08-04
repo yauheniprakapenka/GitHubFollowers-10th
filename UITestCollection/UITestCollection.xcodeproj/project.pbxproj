@@ -13,7 +13,7 @@
 		3ED44C2B22F6DE0200E1A98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */; };
 		3ED44C2E22F6DE0200E1A98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */; };
 		3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */; };
-		3ED44C4422F6E89200E1A98C /* ButtonTestViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */; };
+		3ED44C4422F6E89200E1A98C /* ButtonCollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C4322F6E89200E1A98C /* ButtonCollectionViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		3ED44C3422F6DE0200E1A98C /* UITestCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTapAButton.swift; sourceTree = "<group>"; };
 		3ED44C3A22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewViewController.swift; sourceTree = "<group>"; };
+		3ED44C4322F6E89200E1A98C /* ButtonCollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 			children = (
 				3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */,
 				3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */,
-				3ED44C4322F6E89200E1A98C /* ButtonTestViewViewController.swift */,
+				3ED44C4322F6E89200E1A98C /* ButtonCollectionViewViewController.swift */,
 				3ED44C2722F6DE0100E1A98C /* Main.storyboard */,
 				3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */,
 				3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */,
@@ -200,7 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED44C4422F6E89200E1A98C /* ButtonTestViewViewController.swift in Sources */,
+				3ED44C4422F6E89200E1A98C /* ButtonCollectionViewViewController.swift in Sources */,
 				3ED44C2622F6DE0100E1A98C /* MenuViewController.swift in Sources */,
 				3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import XCTest
 
 class UITestTapAButton: XCTestCase {
-    
+
     let app = XCUIApplication()
 
     override func setUp() {
@@ -21,21 +21,30 @@ class UITestTapAButton: XCTestCase {
     }
 
     func testOneTapAButtonWithIdentifier() {
-        app.buttons["Tap a button"].tap()
+        app.buttons["Button"].tap()
         app.buttons["buttonWithIdentifier"].tap()
         XCTAssert(app.staticTexts["#1 успешно"].exists)
     }
     
     func testTwoTapAButtonWithoutIdentifier() {
-        app.buttons["Tap a button"].tap()
+        app.buttons["Button"].tap()
         app.buttons["Button without identifier"].tap()
         XCTAssert(app.staticTexts["#2 успешно"].exists)
     }
     
     func testThreeTapAButtonWithoutIdentifier() {
-        app.buttons["Tap a button"].tap()
+        app.buttons["Button"].tap()
         app.buttons["Button with some name"].firstMatch.tap()
         XCTAssert(app.staticTexts["#3 успешно"].exists)
+    }
+    
+    func testFourTapAButtonWithoutIdentifier() {
+        app.buttons["Button"].tap()
+        app.buttons["Show alert"].tap()
+        XCTAssert(app.staticTexts["Никола Тесла"].exists)
+        app.alerts.buttons["Спасибо"].tap()
+        XCTAssert(!app.staticTexts["Никола Тесла"].exists)
+        XCTAssert(app.staticTexts["#4 успешно"].exists)
     }
 
 }

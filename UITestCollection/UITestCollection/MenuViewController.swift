@@ -13,7 +13,6 @@ class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         navigationItem.title = "Категория"
     }
 
