@@ -19,7 +19,8 @@
 		3EF5AFE622FDE70700B90954 /* NewButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE522FDE70700B90954 /* NewButtonViewController.swift */; };
 		3EF5AFEA22FDEE5600B90954 /* FirstTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */; };
 		3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */; };
-		3EF5AFEE22FE059900B90954 /* thirdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */; };
+		3EF5AFEE22FE059900B90954 /* ThirdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */; };
+		3EF5AFF022FE362600B90954 /* FourTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +50,8 @@
 		3EF5AFE522FDE70700B90954 /* NewButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButtonViewController.swift; sourceTree = "<group>"; };
 		3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
 		3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTestViewController.swift; sourceTree = "<group>"; };
-		3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTestViewController.swift; sourceTree = "<group>"; };
+		3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTestViewController.swift; sourceTree = "<group>"; };
+		3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,8 @@
 			children = (
 				3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */,
 				3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */,
-				3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */,
+				3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */,
+				3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -245,7 +248,8 @@
 			files = (
 				3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */,
 				3EF5AFDE22FDC4F200B90954 /* CategoryViewController.swift in Sources */,
-				3EF5AFEE22FE059900B90954 /* thirdTestViewController.swift in Sources */,
+				3EF5AFEE22FE059900B90954 /* ThirdTestViewController.swift in Sources */,
+				3EF5AFF022FE362600B90954 /* FourTestViewController.swift in Sources */,
 				3E04825722FC9B9500E238A0 /* ViewController.swift in Sources */,
 				3ED44C4422F6E89200E1A98C /* ButtonCollectionViewController.swift in Sources */,
 				3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */,

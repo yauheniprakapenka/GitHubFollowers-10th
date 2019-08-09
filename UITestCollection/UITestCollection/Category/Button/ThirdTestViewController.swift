@@ -8,7 +8,7 @@
 
 import UIKit
 
-class thirdTestViewController: UIViewController {
+class ThirdTestViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func firstButtonDidTap(_ sender: UIButton) {
