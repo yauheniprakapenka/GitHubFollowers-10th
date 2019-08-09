@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E04825722FC9B9500E238A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04825622FC9B9500E238A0 /* ViewController.swift */; };
 		3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */; };
-		3ED44C2622F6DE0100E1A98C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */; };
 		3ED44C2922F6DE0100E1A98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2722F6DE0100E1A98C /* Main.storyboard */; };
 		3ED44C2B22F6DE0200E1A98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */; };
 		3ED44C2E22F6DE0200E1A98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */; };
 		3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */; };
 		3ED44C4422F6E89200E1A98C /* ButtonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C4322F6E89200E1A98C /* ButtonCollectionViewController.swift */; };
+		3EF5AFDE22FDC4F200B90954 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFDD22FDC4F200B90954 /* CategoryViewController.swift */; };
+		3EF5AFE422FDDD8000B90954 /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE222FDDD8000B90954 /* Button.storyboard */; };
+		3EF5AFE622FDE70700B90954 /* NewButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE522FDE70700B90954 /* NewButtonViewController.swift */; };
+		3EF5AFEA22FDEE5600B90954 /* FirstTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */; };
+		3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */; };
+		3EF5AFEE22FE059900B90954 /* thirdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E04825622FC9B9500E238A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3ED44C2022F6DE0100E1A98C /* UITestCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3ED44C2822F6DE0100E1A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED44C2D22F6DE0200E1A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +44,12 @@
 		3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTapAButton.swift; sourceTree = "<group>"; };
 		3ED44C3A22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ED44C4322F6E89200E1A98C /* ButtonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewController.swift; sourceTree = "<group>"; };
+		3EF5AFDD22FDC4F200B90954 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		3EF5AFE322FDDD8000B90954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = UITestCollection/Flow/Base.lproj/Button.storyboard; sourceTree = "<group>"; };
+		3EF5AFE522FDE70700B90954 /* NewButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButtonViewController.swift; sourceTree = "<group>"; };
+		3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTestViewController.swift; sourceTree = "<group>"; };
+		3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTestViewController.swift; sourceTree = "<group>"; };
+		3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +91,16 @@
 		3ED44C2222F6DE0100E1A98C /* UITestCollection */ = {
 			isa = PBXGroup;
 			children = (
+				3EF5AFE722FDEDC900B90954 /* Category */,
+				3EF5AFE122FDD71D00B90954 /* Flow */,
 				3ED44C2322F6DE0100E1A98C /* AppDelegate.swift */,
-				3ED44C2522F6DE0100E1A98C /* MenuViewController.swift */,
+				3EF5AFE522FDE70700B90954 /* NewButtonViewController.swift */,
+				3EF5AFDD22FDC4F200B90954 /* CategoryViewController.swift */,
 				3ED44C4322F6E89200E1A98C /* ButtonCollectionViewController.swift */,
-				3ED44C2722F6DE0100E1A98C /* Main.storyboard */,
 				3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */,
 				3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */,
 				3ED44C2F22F6DE0200E1A98C /* Info.plist */,
+				3E04825622FC9B9500E238A0 /* ViewController.swift */,
 			);
 			path = UITestCollection;
 			sourceTree = "<group>";
@@ -97,6 +112,33 @@
 				3ED44C3A22F6DE0200E1A98C /* Info.plist */,
 			);
 			path = UITestCollectionUITests;
+			sourceTree = "<group>";
+		};
+		3EF5AFE122FDD71D00B90954 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3EF5AFE222FDDD8000B90954 /* Button.storyboard */,
+				3ED44C2722F6DE0100E1A98C /* Main.storyboard */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		3EF5AFE722FDEDC900B90954 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3EF5AFE822FDEE1C00B90954 /* Button */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3EF5AFE822FDEE1C00B90954 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3EF5AFE922FDEE5600B90954 /* FirstTestViewController.swift */,
+				3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */,
+				3EF5AFED22FE059900B90954 /* thirdTestViewController.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF5AFE422FDDD8000B90954 /* Button.storyboard in Resources */,
 				3ED44C2E22F6DE0200E1A98C /* LaunchScreen.storyboard in Resources */,
 				3ED44C2B22F6DE0200E1A98C /* Assets.xcassets in Resources */,
 				3ED44C2922F6DE0100E1A98C /* Main.storyboard in Resources */,
@@ -200,9 +243,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */,
+				3EF5AFDE22FDC4F200B90954 /* CategoryViewController.swift in Sources */,
+				3EF5AFEE22FE059900B90954 /* thirdTestViewController.swift in Sources */,
+				3E04825722FC9B9500E238A0 /* ViewController.swift in Sources */,
 				3ED44C4422F6E89200E1A98C /* ButtonCollectionViewController.swift in Sources */,
-				3ED44C2622F6DE0100E1A98C /* MenuViewController.swift in Sources */,
 				3ED44C2422F6DE0100E1A98C /* AppDelegate.swift in Sources */,
+				3EF5AFE622FDE70700B90954 /* NewButtonViewController.swift in Sources */,
+				3EF5AFEA22FDEE5600B90954 /* FirstTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +287,14 @@
 				3ED44C2D22F6DE0200E1A98C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3EF5AFE222FDDD8000B90954 /* Button.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EF5AFE322FDDD8000B90954 /* Base */,
+			);
+			name = Button.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
