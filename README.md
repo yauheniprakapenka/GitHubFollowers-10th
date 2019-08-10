@@ -1,5 +1,7 @@
 # UITestCollection
 
+<img src="https://create.adobe.com/content/microsites/inspire/en/2016/5/12/discover_digital_illustrator_syd_weiler_s_fascination_with_time_/_jcr_content/article-body/full_width_images_0/image1.img.jpg/1463005937888.jpg" width="600">
+
 <h2><b>Кнопка</b></h2>
 
 <b>1. Нажать на кнопку по идентификатору</b>
@@ -9,7 +11,7 @@ app.buttons["ButtonWithID"].tap()
 
 <details> 
   <summary>подробнее</summary>
-   В Storyboard выбрать нужную кнопку > Identity inspector > Для Accessibility установить галочку "Enabled" > В поле Identifier указать название.<br><img src="hhttps://i.ibb.co/D5JL3f6/button-test2a.gif" border="0">
+   В Storyboard выбрать нужную кнопку > Identity inspector > Для Accessibility установить галочку "Enabled" > В поле Identifier указать название.<br><img src="hhttps://i.ibb.co/D5JL3f6/button-test2a.gif">
 </details>
 
 <b>2. Нажать на кнопку без идентификатора</b>
