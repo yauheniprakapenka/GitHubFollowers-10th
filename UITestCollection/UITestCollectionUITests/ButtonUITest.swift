@@ -50,12 +50,9 @@ class ButtonUITest: XCTestCase {
     
     func testFiveTapANavigationBarButton() {
         app.buttons["Button"].tap()
-        XCTAssert(app.staticTexts["Нажать на кнопку в Navigation Bar"].exists)
-        app.buttons["Категория"].tap()
-        XCTAssert(!app.staticTexts["Нажать на кнопку в Navigation Bar"].exists)
-        app.buttons["Button"].tap()
-        app.buttons["NavigationBarButton"].tap()
-        XCTAssert(app.staticTexts["#5 успешно"].exists)
+        app.buttons["5. Нажать на кнопку в Navigation Bar"].tap()
+        app.navigationBars.buttons["Camera"].tap()
+        XCTAssert(app.staticTexts["Тест 5 выполнен успешно"].exists)
     }
     
     func testSixTapAnActionSheetButton() {

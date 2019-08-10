@@ -16,7 +16,6 @@ class FiveTestViewController: UIViewController {
         super.viewDidLoad()
         
         let cameraIconButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(tapButton))
-        cameraIconButton.accessibilityIdentifier = "cameraButtonID"
         self.navigationItem.rightBarButtonItem = cameraIconButton
     }
     
