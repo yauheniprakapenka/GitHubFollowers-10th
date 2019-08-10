@@ -14,6 +14,4 @@
 <h4>2. Нажать на кнопку без идентификатора</h4>
 <img src="https://i.ibb.co/89pGQJP/Screenshot-2019-08-10-at-14-25-40.png" alt="Screenshot-2019-08-10-at-14-25-40" border="0">
 
-Указать отображаемое название кнопки на интерфейсе.
-
-<a href="https://ibb.co/HYVk3Yv"><img src="https://i.ibb.co/92NCS2X/Screenshot-2019-08-10-at-14-34-32.png" alt="Screenshot-2019-08-10-at-14-34-32" width="250"></a>
+Указать отображаемое название кнопки на интерфейсе.<br><a href="https://ibb.co/5LMtgty"><img src="https://i.ibb.co/FzxNLNM/Screenshot-2019-08-10-at-14-38-10.png" alt="Screenshot-2019-08-10-at-14-38-10" width="150"></a>
