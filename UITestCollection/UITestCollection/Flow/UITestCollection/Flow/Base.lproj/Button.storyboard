@@ -365,7 +365,23 @@
                     <view key="view" contentMode="scaleToFill" id="be7-fF-fqY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.82970068814841169" blue="0.99648511317102062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тест 7 выполнен успешно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpD-gM-LVP">
+                                <rect key="frame" x="61.5" y="274" width="197" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="197" id="HFF-Jh-gFQ"/>
+                                    <constraint firstAttribute="height" constant="20" id="cin-VS-pL6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.25619285680679688" green="0.71221564797794112" blue="0.43735892802083282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81121464966683465" green="0.75261188769558229" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qpD-gM-LVP" firstAttribute="centerY" secondItem="be7-fF-fqY" secondAttribute="centerY" id="R78-um-JaD"/>
+                            <constraint firstItem="qpD-gM-LVP" firstAttribute="centerX" secondItem="be7-fF-fqY" secondAttribute="centerX" id="eKW-N8-vE7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cb8-Eo-rRT"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="2NV-Cd-iHb"/>
