@@ -9,7 +9,7 @@ app.buttons["ButtonWithID"].tap()
 
 <details> 
   <summary>подробнее</summary>
-   В Storyboard выбрать нужную кнопку > Identity inspector > Для Accessibility установить галочку "Enabled" > В поле Identifier указать название.<br><img src="https://i.ibb.co/n12ndhD/Screenshot-2019-08-10-at-14-14-50.png" alt="Screenshot-2019-08-10-at-14-14-50" border="0">
+   В Storyboard выбрать нужную кнопку > Identity inspector > Для Accessibility установить галочку "Enabled" > В поле Identifier указать название.<br><img src="hhttps://i.ibb.co/D5JL3f6/button-test2a.gif" border="0">
 </details>
 
 <b>2. Нажать на кнопку без идентификатора</b>
