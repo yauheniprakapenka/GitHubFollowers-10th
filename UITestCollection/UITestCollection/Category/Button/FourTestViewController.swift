@@ -13,11 +13,11 @@ class FourTestViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func buttonDidTap(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Никола Тесла", message: "Изобрел электродвигатель, генератор, многофазные системы, работающие на переменном токе.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Title", message: "This is message", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Отменить", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "One", style: .default, handler: nil))
         
-        alert.addAction(UIAlertAction(title: "Спасибо", style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Two", style: .default, handler: { action in
             self.resultLabel.text = "Тест 4 выполнен успешно"
             self.resultLabel.textColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
         }))

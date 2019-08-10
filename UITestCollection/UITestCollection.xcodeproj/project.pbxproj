@@ -21,6 +21,7 @@
 		3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */; };
 		3EF5AFEE22FE059900B90954 /* ThirdTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */; };
 		3EF5AFF022FE362600B90954 /* FourTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */; };
+		3EF5AFF222FE3C0100B90954 /* FiveTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFF122FE3C0000B90954 /* FiveTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTestViewController.swift; sourceTree = "<group>"; };
 		3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTestViewController.swift; sourceTree = "<group>"; };
 		3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTestViewController.swift; sourceTree = "<group>"; };
+		3EF5AFF122FE3C0000B90954 /* FiveTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				3EF5AFEB22FDF69700B90954 /* SecondTestViewController.swift */,
 				3EF5AFED22FE059900B90954 /* ThirdTestViewController.swift */,
 				3EF5AFEF22FE362600B90954 /* FourTestViewController.swift */,
+				3EF5AFF122FE3C0000B90954 /* FiveTestViewController.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				3EF5AFEC22FDF69700B90954 /* SecondTestViewController.swift in Sources */,
 				3EF5AFDE22FDC4F200B90954 /* CategoryViewController.swift in Sources */,
+				3EF5AFF222FE3C0100B90954 /* FiveTestViewController.swift in Sources */,
 				3EF5AFEE22FE059900B90954 /* ThirdTestViewController.swift in Sources */,
 				3EF5AFF022FE362600B90954 /* FourTestViewController.swift in Sources */,
 				3E04825722FC9B9500E238A0 /* ViewController.swift in Sources */,
