@@ -8,7 +8,7 @@ app.buttons["ButtonWithID"].tap()
 ```
 
 <details> 
-  <summary>Настроить </summary>
+  <summary>подробнее</summary>
    В Storyboard выбрать нужную кнопку > Identity inspector > Для Accessibility установить галочку "Enabled" > В поле Identifier указать название.<br><img src="https://i.ibb.co/n12ndhD/Screenshot-2019-08-10-at-14-14-50.png" alt="Screenshot-2019-08-10-at-14-14-50" border="0">
 </details>
 
@@ -19,6 +19,16 @@ app.buttons["Button without ID"].tap()
 ```
 
 <details> 
-  <summary>Настроить </summary>
-Указать имя кнопки, отображаемое в интерфейсе.<br><a href="https://ibb.co/5LMtgty"><img src="https://i.ibb.co/FzxNLNM/Screenshot-2019-08-10-at-14-38-10.png" alt="Screenshot-2019-08-10-at-14-38-10" width="150"></a>
+  <summary>подробнее</summary>
+Указать имя кнопки, отображаемое в интерфейсе.<br><img src="https://i.ibb.co/PCK7085/button-test2.gif" alt="button-test2" width="250"></a>
+</details>
+
+<b>3. Нажать на первую кнопку с одинаковым названием</b>
+
+```swift
+app.buttons["3. Нажать на первую кнопку с одинаковым названием"].firstMatch.tap()
+```
+<details> 
+  <summary>подробнее</summary>
+Указать имя кнопки, отображаемое в интерфейсе.<br><img src="https://i.ibb.co/1R6F3R3/button-test3.gif" alt="button-test3" width="250"></a>
 </details>
