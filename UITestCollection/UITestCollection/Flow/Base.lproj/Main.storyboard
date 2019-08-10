@@ -25,15 +25,15 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7r-Er-2C6">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-NK-3tg">
-                                                        <rect key="frame" x="20" y="6" width="49" height="28"/>
+                                                        <rect key="frame" x="125" y="31" width="70" height="28"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="49" id="bPY-w5-gQW"/>
-                                                            <constraint firstAttribute="height" constant="28" id="h13-hj-nkB"/>
+                                                            <constraint firstAttribute="height" constant="28" id="5mp-ci-q6T"/>
+                                                            <constraint firstAttribute="width" constant="70" id="XjK-wY-Tnu"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <state key="normal" title="Button">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -44,9 +44,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="leading" secondItem="H7r-Er-2C6" secondAttribute="leading" constant="20" id="1Pz-q7-RZ9"/>
-                                                    <constraint firstAttribute="height" constant="40" id="bfY-i2-fEl"/>
-                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="centerY" secondItem="H7r-Er-2C6" secondAttribute="centerY" id="h7E-KH-HX0"/>
+                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="centerX" secondItem="H7r-Er-2C6" secondAttribute="centerX" id="KJa-JI-ucK"/>
+                                                    <constraint firstAttribute="height" constant="60" id="bfY-i2-fEl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="tfk-NK-3tg" secondAttribute="bottom" constant="1" id="wc1-e5-xTV"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

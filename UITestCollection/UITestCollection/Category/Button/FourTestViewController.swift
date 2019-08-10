@@ -15,7 +15,10 @@ class FourTestViewController: UIViewController {
     @IBAction func buttonDidTap(_ sender: UIButton) {
         let alert = UIAlertController(title: "Title", message: "This is message", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "One", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "One", style: .default, handler: { action in
+            self.resultLabel.text = "Тест 4 выполнен не успешно"
+            self.resultLabel.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        }))
         
         alert.addAction(UIAlertAction(title: "Two", style: .default, handler: { action in
             self.resultLabel.text = "Тест 4 выполнен успешно"

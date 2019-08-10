@@ -8,7 +8,7 @@
 
 import XCTest
 
-class UITestTapAButton: XCTestCase {
+class ButtonUITest: XCTestCase {
 
     let app = XCUIApplication()
 
@@ -17,34 +17,35 @@ class UITestTapAButton: XCTestCase {
         app.launch()
     }
 
-    override func tearDown() {
-    }
+    override func tearDown() { }
 
-    func testOneTapAButtonWithIdentifier() {
+    func testOneTapTheButtonWithIdentifier() {
         app.buttons["Button"].tap()
-        app.buttons["buttonWithIdentifier"].tap()
-        XCTAssert(app.staticTexts["#1 успешно"].exists)
+        app.buttons["1. Нажать на кнопку по идентификатору"].tap()
+        app.buttons["ButtonWithID"].tap()
+        XCTAssert(app.staticTexts["Тест 1 выполнен успешно"].exists)
     }
     
-    func testTwoTapAButtonWithoutIdentifier() {
+    func testOneTapTheButtonWithoutIdentifier() {
         app.buttons["Button"].tap()
-        app.buttons["Button without identifier"].tap()
-        XCTAssert(app.staticTexts["#2 успешно"].exists)
+        app.buttons["2. Нажать на кнопку без идентификатора"].tap()
+        app.buttons["Button without ID"].tap()
+        XCTAssert(app.staticTexts["Тест 2 выполнен успешно"].exists)
     }
     
     func testThreeTapAButtonWithoutIdentifier() {
         app.buttons["Button"].tap()
-        app.buttons["Button with some name"].firstMatch.tap()
-        XCTAssert(app.staticTexts["#3 успешно"].exists)
+        app.buttons["3. Нажать на первую кнопку с одинаковым названием"].tap()
+        app.buttons["Button"].firstMatch.tap()
+        XCTAssert(app.staticTexts["Тест 3 выполнен успешно"].exists)
     }
     
     func testFourTapAButtonWithoutIdentifier() {
         app.buttons["Button"].tap()
-        app.buttons["Show alert"].tap()
-        XCTAssert(app.staticTexts["Никола Тесла"].exists)
-        app.alerts.buttons["Спасибо"].tap()
-        XCTAssert(!app.staticTexts["Никола Тесла"].exists)
-        XCTAssert(app.staticTexts["#4 успешно"].exists)
+        app.buttons["4. Нажать на кнопку в Alert"].tap()
+        app.buttons["Button"].tap()
+        app.alerts.buttons["Two"].tap()
+        XCTAssert(app.staticTexts["Тест 4 выполнен успешно"].exists)
     }
     
     func testFiveTapANavigationBarButton() {

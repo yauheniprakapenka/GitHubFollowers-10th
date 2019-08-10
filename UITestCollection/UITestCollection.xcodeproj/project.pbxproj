@@ -12,7 +12,7 @@
 		3ED44C2922F6DE0100E1A98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2722F6DE0100E1A98C /* Main.storyboard */; };
 		3ED44C2B22F6DE0200E1A98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2A22F6DE0200E1A98C /* Assets.xcassets */; };
 		3ED44C2E22F6DE0200E1A98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */; };
-		3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */; };
+		3ED44C3922F6DE0200E1A98C /* ButtonUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C3822F6DE0200E1A98C /* ButtonUITest.swift */; };
 		3ED44C4422F6E89200E1A98C /* ButtonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED44C4322F6E89200E1A98C /* ButtonCollectionViewController.swift */; };
 		3EF5AFDE22FDC4F200B90954 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF5AFDD22FDC4F200B90954 /* CategoryViewController.swift */; };
 		3EF5AFE422FDDD8000B90954 /* Button.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EF5AFE222FDDD8000B90954 /* Button.storyboard */; };
@@ -45,7 +45,7 @@
 		3ED44C2D22F6DE0200E1A98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3ED44C2F22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ED44C3422F6DE0200E1A98C /* UITestCollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestCollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestTapAButton.swift; sourceTree = "<group>"; };
+		3ED44C3822F6DE0200E1A98C /* ButtonUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonUITest.swift; sourceTree = "<group>"; };
 		3ED44C3A22F6DE0200E1A98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ED44C4322F6E89200E1A98C /* ButtonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewController.swift; sourceTree = "<group>"; };
 		3EF5AFDD22FDC4F200B90954 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		3ED44C3722F6DE0200E1A98C /* UITestCollectionUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3ED44C3822F6DE0200E1A98C /* UITestTapAButton.swift */,
+				3ED44C3822F6DE0200E1A98C /* ButtonUITest.swift */,
 				3ED44C3A22F6DE0200E1A98C /* Info.plist */,
 			);
 			path = UITestCollectionUITests;
@@ -125,8 +125,8 @@
 		3EF5AFE122FDD71D00B90954 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
-				3EF5AFE222FDDD8000B90954 /* Button.storyboard */,
 				3ED44C2722F6DE0100E1A98C /* Main.storyboard */,
+				3EF5AFE222FDDD8000B90954 /* Button.storyboard */,
 				3ED44C2C22F6DE0200E1A98C /* LaunchScreen.storyboard */,
 			);
 			path = Flow;
@@ -282,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED44C3922F6DE0200E1A98C /* UITestTapAButton.swift in Sources */,
+				3ED44C3922F6DE0200E1A98C /* ButtonUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

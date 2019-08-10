@@ -10,6 +10,7 @@ import UIKit
 
 class SecondTestViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var buttonWithoutID: UIButton!
     
     @IBAction func buttonWithoutIDDidTap(_ sender: UIButton) {
         resultLabel.text = "Тест 2 выполнен успешно"
@@ -18,9 +19,8 @@ class SecondTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        buttonWithoutID.layer.cornerRadius = 11
     }
-    
 
 }
