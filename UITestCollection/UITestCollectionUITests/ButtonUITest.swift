@@ -52,6 +52,7 @@ class ButtonUITest: XCTestCase {
         app.buttons["Button"].tap()
         app.buttons["5. Нажать на кнопку в Navigation Bar"].tap()
         app.navigationBars.buttons["Camera"].tap()
+//        app.navigationBars.buttons["Delete"].tap()
         XCTAssert(app.staticTexts["Тест 5 выполнен успешно"].exists)
     }
     

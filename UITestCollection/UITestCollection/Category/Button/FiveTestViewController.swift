@@ -15,8 +15,9 @@ class FiveTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let cameraIconButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(tapButton))
-        self.navigationItem.rightBarButtonItem = cameraIconButton
+        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(tapButton))
+//        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(tapButton))
+        self.navigationItem.rightBarButtonItem = rightBarButton
     }
     
     @objc func tapButton() {
