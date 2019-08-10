@@ -15,9 +15,9 @@ class FiveTestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let cameraButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(tapButton))
-        cameraButton.accessibilityIdentifier = "cameraButtonID"
-        self.navigationItem.rightBarButtonItem = cameraButton
+        let cameraIconButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(tapButton))
+        cameraIconButton.accessibilityIdentifier = "cameraButtonID"
+        self.navigationItem.rightBarButtonItem = cameraIconButton
     }
     
     @objc func tapButton() {

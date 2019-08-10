@@ -25,7 +25,6 @@ class NewButtonViewController: UIViewController {
         
         thirdTestButton.titleLabel?.minimumScaleFactor = 0.5
         thirdTestButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        thirdTestButton.titleLabel?.numberOfLines = 2
     }
 
 
