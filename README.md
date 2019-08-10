@@ -67,4 +67,4 @@ app.buttons["One"].tap()
 <details> 
   <summary>подробнее</summary>
 <a href="https://ibb.co/RgdKk2L"><img src="https://i.ibb.co/GdND47g/button-test6.gif" alt="button-test6" width="250"></a>
-</details>
+</details> 
