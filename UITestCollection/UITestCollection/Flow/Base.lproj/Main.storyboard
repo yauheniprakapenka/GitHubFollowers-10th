@@ -25,13 +25,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7r-Er-2C6">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfk-NK-3tg">
-                                                        <rect key="frame" x="20" y="14" width="49" height="32"/>
+                                                        <rect key="frame" x="20" y="6" width="49" height="28"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="49" id="aPV-SQ-BkB"/>
-                                                            <constraint firstAttribute="height" constant="32" id="qy4-tL-u5u"/>
+                                                            <constraint firstAttribute="width" constant="49" id="bPY-w5-gQW"/>
+                                                            <constraint firstAttribute="height" constant="28" id="h13-hj-nkB"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <state key="normal" title="Button">
@@ -44,10 +44,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="tfk-NK-3tg" secondAttribute="bottom" constant="14" id="59n-1L-Veu"/>
-                                                    <constraint firstAttribute="height" constant="60" id="bfY-i2-fEl"/>
-                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="top" secondItem="H7r-Er-2C6" secondAttribute="top" constant="14" id="k83-cd-y9i"/>
-                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="leading" secondItem="H7r-Er-2C6" secondAttribute="leading" constant="20" id="tfp-OX-aqm"/>
+                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="leading" secondItem="H7r-Er-2C6" secondAttribute="leading" constant="20" id="1Pz-q7-RZ9"/>
+                                                    <constraint firstAttribute="height" constant="40" id="bfY-i2-fEl"/>
+                                                    <constraint firstItem="tfk-NK-3tg" firstAttribute="centerY" secondItem="H7r-Er-2C6" secondAttribute="centerY" id="h7E-KH-HX0"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -82,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmG-nG-qEy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608.6956521739135" y="-225"/>
+            <point key="canvasLocation" x="2608.125" y="-225"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pfT-l4-eHT">
