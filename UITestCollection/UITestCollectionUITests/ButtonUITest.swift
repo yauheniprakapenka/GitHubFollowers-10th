@@ -19,28 +19,28 @@ class ButtonUITest: XCTestCase {
 
     override func tearDown() { }
 
-    func testOneTapTheButtonWithIdentifier() {
+    func testOneTapButtonWithIdentifier() {
         app.buttons["Button"].tap()
         app.buttons["1. Нажать на кнопку по идентификатору"].tap()
         app.buttons["ButtonWithID"].tap()
         XCTAssert(app.staticTexts["Тест 1 выполнен успешно"].exists)
     }
     
-    func testOneTapTheButtonWithoutIdentifier() {
+    func testOneTapButtonWithoutIdentifier() {
         app.buttons["Button"].tap()
         app.buttons["2. Нажать на кнопку без идентификатора"].tap()
         app.buttons["Button without ID"].tap()
         XCTAssert(app.staticTexts["Тест 2 выполнен успешно"].exists)
     }
     
-    func testThreeTapAButtonWithoutIdentifier() {
+    func testThreeTapButtonWithSameNames() {
         app.buttons["Button"].tap()
         app.buttons["3. Нажать на первую кнопку с одинаковым названием"].tap()
         app.buttons["Button"].firstMatch.tap()
         XCTAssert(app.staticTexts["Тест 3 выполнен успешно"].exists)
     }
     
-    func testFourTapAButtonWithoutIdentifier() {
+    func testFourTapAlert() {
         app.buttons["Button"].tap()
         app.buttons["4. Нажать на кнопку в Alert"].tap()
         app.buttons["Button"].tap()
@@ -48,21 +48,20 @@ class ButtonUITest: XCTestCase {
         XCTAssert(app.staticTexts["Тест 4 выполнен успешно"].exists)
     }
     
-    func testFiveTapANavigationBarButton() {
+    func testFiveTapNavigationButton() {
         app.buttons["Button"].tap()
         app.buttons["5. Нажать на кнопку в Navigation Bar"].tap()
         app.navigationBars.buttons["Camera"].tap()
-//        app.navigationBars.buttons["Delete"].tap()
         XCTAssert(app.staticTexts["Тест 5 выполнен успешно"].exists)
     }
     
     func testSixTapAnActionSheetButton() {
         app.buttons["Button"].tap()
-        app.buttons["Show action sheet"].tap()
-        XCTAssert(app.staticTexts["Action Sheet Title"].exists)
-        app.buttons["Approve"].tap()
-        XCTAssert(!app.staticTexts["Action Sheet Title"].exists)
-        XCTAssert(app.staticTexts["#6 успешно"].exists)
+        app.buttons["6. Нажать на кнопку в Activity Sheet"].tap()
+        app.buttons["Button"].tap()
+        XCTAssert(app.staticTexts["Description"].waitForExistence(timeout: 3))
+        app.buttons["One"].tap()
+        XCTAssert(app.staticTexts["Тест 6 выполнен успешно"].exists)
     }
     
 }
