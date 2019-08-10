@@ -26,9 +26,19 @@ app.buttons["Button without ID"].tap()
 <b>3. Нажать на первую кнопку с одинаковым названием</b>
 
 ```swift
-app.buttons["3. Нажать на первую кнопку с одинаковым названием"].firstMatch.tap()
+app.buttons["Button"].firstMatch.tap()
 ```
 <details> 
   <summary>подробнее</summary>
 Указать имя кнопки, отображаемое в интерфейсе.<br><img src="https://i.ibb.co/1R6F3R3/button-test3.gif" alt="button-test3" width="250"></a>
+</details>
+
+<b>4. Нажать на кнопку в Alert</b>
+
+```swift
+app.alerts.buttons["Two"].tap()
+```
+<details> 
+  <summary>подробнее</summary>
+<a href="https://ibb.co/gDThXkK"><img src="https://i.ibb.co/xMjdcxT/button-test4.gif" alt="button-test4" width="250"></a>
 </details>
