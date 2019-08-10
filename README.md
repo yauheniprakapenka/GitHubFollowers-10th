@@ -44,3 +44,20 @@ app.alerts.buttons["Two"].tap()
   <summary>подробнее</summary>
 <a href="https://ibb.co/gDThXkK"><img src="https://i.ibb.co/xMjdcxT/button-test4.gif" alt="button-test4" width="250"></a>
 </details>
+
+<b>5. Нажать на кнопку в Navigation Bar</b>
+
+
+| Icon | Code |
+| --- | --- |
+| <a href="https://ibb.co/yPcg2GW"><img src="https://i.ibb.co/B35Tkdq/Navigation-Camera-2x.png" alt="Navigation-Camera-2x" width="25"></a> | ```app.navigationBars.buttons["Camera"].tap() ``` |
+| <a href="https://ibb.co/smCwKLB"><img src="https://i.ibb.co/YRXkcvr/Navigation-Trash-2x.png" alt="Navigation-Trash-2x" width="20"></a> | ```app.navigationBars.buttons["Delete"].tap()``` |
+
+
+<details> 
+  <summary>подробнее</summary>
+<a href="https://ibb.co/TkfjpDQ"><img src="https://i.ibb.co/SPjYWDk/button-test5.gif" alt="button-test5" width="250"></a>
+</details>
+
+
+
