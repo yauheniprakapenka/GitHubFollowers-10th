@@ -38,6 +38,7 @@ app.buttons["Button"].firstMatch.tap()
 <b>4. Нажать на кнопку в Alert</b>
 
 ```swift
+XCTAssert(app.buttons["Two"].waitForExistence(timeout: 3)) // Ожидание появления кнопки
 app.alerts.buttons["Two"].tap()
 ```
 <details> 
@@ -60,11 +61,22 @@ app.alerts.buttons["Two"].tap()
 <b>6. Нажать на кнопку в Activity Sheet Bar</b>
 
 ```swift
-XCTAssert(app.staticTexts["Description"].waitForExistence(timeout: 3)) // Ожидание открытия Activity Sheet
+XCTAssert(app.buttons["One"].waitForExistence(timeout: 3))  // Ожидание появления кнопки
 app.buttons["One"].tap()
 ```
 
 <details> 
 <summary>подробнее</summary>
 <a href="https://ibb.co/RgdKk2L"><img src="https://i.ibb.co/GdND47g/button-test6.gif" alt="button-test6" width="250"></a>
+</details>
+
+<b>7. Нажать на кнопку в Tabbar</b>
+
+```swift
+app.tabBars.buttons["Contacts"].tap()
+```
+
+<details> 
+<summary>подробнее</summary>
+<a href="https://ibb.co/2tnnTjm"><img src="https://i.ibb.co/qsyyvRX/button-test7.gif" alt="button-test7" width="250"></a>
 </details>
