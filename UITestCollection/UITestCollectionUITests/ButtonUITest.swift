@@ -62,7 +62,7 @@ class ButtonUITest: XCTestCase {
         XCTAssert(app.staticTexts["Action Sheet Title"].exists)
         app.buttons["Approve"].tap()
         XCTAssert(!app.staticTexts["Action Sheet Title"].exists)
-        XCTAssert(app.staticTexts["#6 успешно"].exists)
+        XCTAssert(app.staticTexts["#6 успешно"].exists) 
     }
     
 }
