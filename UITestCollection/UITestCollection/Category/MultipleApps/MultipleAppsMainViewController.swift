@@ -10,11 +10,13 @@ import UIKit
 
 class MultipleAppsMainViewController: UIViewController {
     
-    
+    @IBOutlet weak var firstTestButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        firstTestButton.titleLabel?.contentScaleFactor = 0.5
+        firstTestButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
 }

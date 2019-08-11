@@ -28,10 +28,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY8-iu-bIk">
-                                                        <rect key="frame" x="20" y="0.0" width="280" height="30"/>
-                                                        <state key="normal" title="1. Свернуть первое прожение, развернуть второе">
+                                                        <rect key="frame" x="20" y="10" width="280" height="30"/>
+                                                        <state key="normal" title="1. Свернуть первое приложение, развернуть второе">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="rcB-FI-wTf" kind="show" id="cYs-Dq-h4l"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,7 +42,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="ZY8-iu-bIk" secondAttribute="trailing" constant="20" id="Nav-sd-cZg"/>
                                                     <constraint firstAttribute="height" constant="40" id="P6Z-R6-oG8"/>
                                                     <constraint firstItem="ZY8-iu-bIk" firstAttribute="leading" secondItem="GRD-WF-982" secondAttribute="leading" constant="20" id="Whw-i7-nEZ"/>
-                                                    <constraint firstItem="ZY8-iu-bIk" firstAttribute="top" secondItem="GRD-WF-982" secondAttribute="top" id="ufc-Oy-dzR"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZY8-iu-bIk" secondAttribute="bottom" id="Y0a-aP-z3R"/>
                                                     <constraint firstItem="ZY8-iu-bIk" firstAttribute="centerX" secondItem="GRD-WF-982" secondAttribute="centerX" id="zkb-Fc-1gB"/>
                                                 </constraints>
                                             </view>
@@ -71,10 +74,65 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NQt-I4-HaE"/>
                     </view>
+                    <connections>
+                        <outlet property="firstTestButton" destination="ZY8-iu-bIk" id="h3B-Xw-Rrg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xZ-YB-Dn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3595" y="-90"/>
+        </scene>
+        <!--Multiple Apps First Test View Controller-->
+        <scene sceneID="Pud-lX-YZD">
+            <objects>
+                <viewController id="rcB-FI-wTf" customClass="MultipleAppsFirstTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LLb-1d-njR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DhC-Y5-9tZ">
+                                <rect key="frame" x="86.5" y="269" width="147" height="30"/>
+                                <state key="normal" title="Первое приложение">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonForFirstAppDidTap:" destination="rcB-FI-wTf" eventType="touchUpInside" id="yQx-cl-peX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-JI-y51">
+                                <rect key="frame" x="139" y="210" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xck-Iu-mhQ">
+                                <rect key="frame" x="87.5" y="329" width="145" height="30"/>
+                                <state key="normal" title="Второе приложение">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonForSecondAppDidTap:" destination="rcB-FI-wTf" eventType="touchUpInside" id="5qk-qc-fP1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DhC-Y5-9tZ" firstAttribute="centerY" secondItem="LLb-1d-njR" secondAttribute="centerY" id="3Cy-xt-QFZ"/>
+                            <constraint firstItem="Xck-Iu-mhQ" firstAttribute="top" secondItem="DhC-Y5-9tZ" secondAttribute="bottom" constant="30" id="3Yh-Hk-F5r"/>
+                            <constraint firstItem="DhC-Y5-9tZ" firstAttribute="top" secondItem="rhP-JI-y51" secondAttribute="bottom" constant="38" id="RfM-FJ-ucp"/>
+                            <constraint firstItem="Xck-Iu-mhQ" firstAttribute="centerX" secondItem="LLb-1d-njR" secondAttribute="centerX" id="TS8-oa-A2G"/>
+                            <constraint firstItem="DhC-Y5-9tZ" firstAttribute="centerX" secondItem="LLb-1d-njR" secondAttribute="centerX" id="ebR-rZ-hGL"/>
+                            <constraint firstItem="rhP-JI-y51" firstAttribute="centerX" secondItem="LLb-1d-njR" secondAttribute="centerX" id="iYP-xP-DsK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DDx-T3-DI7"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="rhP-JI-y51" id="KqB-5Y-8GA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E98-6I-Kg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4380" y="-91"/>
         </scene>
     </scenes>
 </document>

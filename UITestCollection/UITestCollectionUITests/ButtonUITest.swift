@@ -14,7 +14,7 @@ class ButtonUITest: XCTestCase {
 
     override func setUp() {
         continueAfterFailure = false
-//        app.launch()
+        app.launch()
     }
 
     override func tearDown() { }
@@ -72,21 +72,4 @@ class ButtonUITest: XCTestCase {
         XCTAssert(app.staticTexts["Тест 7 выполнен успешно"].exists)
     }
     
-    func testfsSevenTapTabbarButton() {
-        let app1 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp1")
-        let app2 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp2")
-        
-        app1.launch()
-        app1.activate()
-        
-        app2.launchArguments = ["-StartFromCleanState", "YES"]
-        app2.launch()
-        app2.activate()
-
-        app1.activate()
-        app2.activate()
-    }
-    
 }
-
-
