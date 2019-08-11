@@ -125,11 +125,11 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="Tsz-kM-txB"/>
                                                         </constraints>
-                                                        <state key="normal" title="5. Нажать на кнопку в Navigation Bar">
+                                                        <state key="normal" title="5. Нажать на кнопку с иконкой в Navigation Bar">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="Llg-ei-6Xq" kind="show" id="7xO-qi-INZ"/>
+                                                            <segue destination="Llg-ei-6Xq" kind="show" id="7tS-Q2-nAs"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -237,6 +237,7 @@
                     </view>
                     <connections>
                         <outlet property="firstTestButton" destination="AZH-n0-Wqu" id="Ao2-OP-mZR"/>
+                        <outlet property="fiveTestButton" destination="DrT-A6-Lqp" id="Zvr-et-zDo"/>
                         <outlet property="secondTestButton" destination="nxo-Tq-Xcw" id="28c-iA-0T7"/>
                         <outlet property="thirdTestButton" destination="VRO-4E-jIh" id="vPv-s3-Sms"/>
                     </connections>
@@ -254,9 +255,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xz-uk-bFw">
-                                <rect key="frame" x="45" y="273.5" width="230" height="21"/>
+                                <rect key="frame" x="122" y="273.5" width="76" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="N3t-QQ-l0A"/>
                                     <constraint firstAttribute="height" constant="21" id="egG-aM-XcX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -290,7 +290,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7H-M1-vQL">
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="XFc-Zb-5rS"/>
                                     <constraint firstAttribute="height" constant="30" id="pDg-nL-xGm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -299,9 +298,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uY-wH-gvJ">
-                                <rect key="frame" x="45" y="219" width="230" height="21"/>
+                                <rect key="frame" x="122" y="219" width="76" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="6AN-4t-MUh"/>
                                     <constraint firstAttribute="height" constant="21" id="MsQ-K2-hHC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -369,7 +367,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тест 7 выполнен успешно" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpD-gM-LVP">
                                 <rect key="frame" x="61.5" y="274" width="197" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="197" id="HFF-Jh-gFQ"/>
                                     <constraint firstAttribute="height" constant="20" id="cin-VS-pL6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -446,10 +443,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoK-NZ-P0S">
-                                <rect key="frame" x="80" y="264" width="160" height="40"/>
+                                <rect key="frame" x="100" y="264" width="120" height="40"/>
                                 <color key="backgroundColor" red="0.16178272566914931" green="0.68335743360787704" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="cHx-2g-LJh"/>
                                     <constraint firstAttribute="height" constant="40" id="v7e-zN-7Ug"/>
                                 </constraints>
                                 <state key="normal" title="Button without ID">
@@ -461,9 +457,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkD-U5-qid">
-                                <rect key="frame" x="45" y="213" width="230" height="21"/>
+                                <rect key="frame" x="122" y="213" width="76" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="230" id="amu-wi-JVH"/>
                                     <constraint firstAttribute="height" constant="21" id="nGK-yD-nBE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -501,7 +496,6 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4v6-kZ-tTO"/>
-                                    <constraint firstAttribute="width" constant="46" id="I6Z-CP-PWg"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -518,7 +512,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qN-Cx-oiC">
                                 <rect key="frame" x="137" y="369" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="9ni-lw-uqe"/>
                                     <constraint firstAttribute="height" constant="30" id="ize-CD-fSP"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
@@ -527,10 +520,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNN-eT-uJr">
-                                <rect key="frame" x="45" y="218" width="230" height="21"/>
+                                <rect key="frame" x="122" y="218" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="IAd-ln-Vpu"/>
-                                    <constraint firstAttribute="width" constant="230" id="PwV-gN-Ebd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -570,7 +562,6 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jTn-HJ-4Rp"/>
-                                    <constraint firstAttribute="width" constant="46" id="sud-t7-mEz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -578,10 +569,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="resultLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ie-1u-e6M">
-                                <rect key="frame" x="45" y="218" width="230" height="21"/>
+                                <rect key="frame" x="122" y="218" width="76" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Og7-vv-Dfn"/>
-                                    <constraint firstAttribute="width" constant="230" id="qNO-Eh-Wtp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
