@@ -75,6 +75,48 @@
                                                     <constraint firstAttribute="height" constant="40" id="obk-EK-wkS"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjY-3J-Pwr">
+                                                <rect key="frame" x="0.0" y="136" width="320" height="40"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m58-vh-dNl">
+                                                        <rect key="frame" x="100" y="8" width="120" height="32"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNy-cg-cB4">
+                                                                <rect key="frame" x="39" y="-2" width="78" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" title="Команды">
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="MuW-ts-2pH" kind="show" id="N2k-nZ-EqT"/>
+                                                                </connections>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CommandLine" translatesAutoresizingMaskIntoConstraints="NO" id="oFE-UO-P9C">
+                                                                <rect key="frame" x="0.0" y="4" width="29" height="24"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="24" id="pHq-hQ-0X7"/>
+                                                                    <constraint firstAttribute="width" constant="29" id="xQp-Xw-ULa"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="03v-h3-sfJ"/>
+                                                            <constraint firstAttribute="height" constant="32" id="a98-y5-3Cz"/>
+                                                            <constraint firstItem="oFE-UO-P9C" firstAttribute="centerY" secondItem="m58-vh-dNl" secondAttribute="centerY" id="ien-KT-BOF"/>
+                                                            <constraint firstAttribute="bottom" secondItem="FNy-cg-cB4" secondAttribute="bottom" id="oAR-aR-tHI"/>
+                                                            <constraint firstAttribute="trailing" secondItem="FNy-cg-cB4" secondAttribute="trailing" constant="3" id="r44-bK-C5Y"/>
+                                                            <constraint firstItem="FNy-cg-cB4" firstAttribute="leading" secondItem="oFE-UO-P9C" secondAttribute="trailing" constant="10" id="uQE-eB-jDF"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="m58-vh-dNl" firstAttribute="centerX" secondItem="DjY-3J-Pwr" secondAttribute="centerX" id="5qO-eQ-Uud"/>
+                                                    <constraint firstAttribute="height" constant="40" id="DLV-aH-P4h"/>
+                                                    <constraint firstAttribute="bottom" secondItem="m58-vh-dNl" secondAttribute="bottom" id="Dtk-e0-LHd"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -87,7 +129,10 @@
                                             <constraint firstItem="9Ue-u2-Qc8" firstAttribute="leading" secondItem="bwY-KR-aTa" secondAttribute="leading" id="SC9-QX-uvm"/>
                                             <constraint firstAttribute="trailing" secondItem="H7r-Er-2C6" secondAttribute="trailing" id="Sfg-sn-X6i"/>
                                             <constraint firstAttribute="height" constant="1000" id="dqW-yk-A0D"/>
+                                            <constraint firstItem="DjY-3J-Pwr" firstAttribute="top" secondItem="SeK-TM-Zp5" secondAttribute="bottom" id="kZW-MS-O52"/>
+                                            <constraint firstAttribute="trailing" secondItem="DjY-3J-Pwr" secondAttribute="trailing" id="mBM-vJ-9Q6"/>
                                             <constraint firstAttribute="trailing" secondItem="9Ue-u2-Qc8" secondAttribute="trailing" id="owC-tg-Rnv"/>
+                                            <constraint firstItem="DjY-3J-Pwr" firstAttribute="leading" secondItem="bwY-KR-aTa" secondAttribute="leading" id="v0D-ml-eXR"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -149,8 +194,17 @@
             </objects>
             <point key="canvasLocation" x="3345" y="-181"/>
         </scene>
+        <!--CommandLineViewController-->
+        <scene sceneID="jpK-v3-HxF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CommandLineViewController" id="MuW-ts-2pH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOA-1s-8Hg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3435" y="-123"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="CommandLine" width="512" height="512"/>
         <image name="Header" width="1289" height="132"/>
     </resources>
 </document>
