@@ -57,7 +57,7 @@ class ButtonUITest: XCTestCase {
     }
     
     func testSixTapAnActionSheetButton() {
-        app.buttons["Button"].tap()
+        app.buttons["Кнопка"].tap()
         app.buttons["6. Нажать на кнопку в Activity Sheet"].tap()
         app.buttons["Button"].tap()
         XCTAssert(app.buttons["One"].waitForExistence(timeout: 3)) 
@@ -66,7 +66,7 @@ class ButtonUITest: XCTestCase {
     }
     
     func testSevenTapTabbarButton() {
-        app.buttons["Button"].tap()
+        app.buttons["Кнопка"].tap()
         app.buttons["7. Нажать на кнопку в Tabbar"].tap()
         app.tabBars.buttons["Contacts"].tap()
         XCTAssert(app.staticTexts["Тест 7 выполнен успешно"].exists)
