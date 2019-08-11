@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstTestViewController: UIViewController {
+class ButtonFirstTestViewController: UIViewController {
     let helper = Helper()
     
     @IBOutlet weak var resultLabel: UILabel!

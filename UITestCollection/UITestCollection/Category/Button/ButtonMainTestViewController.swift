@@ -8,11 +8,12 @@
 
 import UIKit
 
-class NewButtonViewController: UIViewController {
+class ButtonMainTestViewController: UIViewController {
     
     @IBOutlet weak var firstTestButton: UIButton!
     @IBOutlet weak var secondTestButton: UIButton!
     @IBOutlet weak var thirdTestButton: UIButton!
+    @IBOutlet weak var fiveTestButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class NewButtonViewController: UIViewController {
         
         thirdTestButton.titleLabel?.minimumScaleFactor = 0.5
         thirdTestButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        fiveTestButton.titleLabel?.minimumScaleFactor = 0.5
+        fiveTestButton.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 
 
