@@ -35,8 +35,7 @@ app.buttons["Button"].firstMatch.tap()
 
 <b>4. Нажать на кнопку в Alert</b>
 
-```swift
-XCTAssert(app.buttons["Two"].waitForExistence(timeout: 3)) // Ожидание появления кнопки
+```swift\\
 app.alerts.buttons["Two"].tap()
 ```
 <details> 
@@ -77,4 +76,34 @@ app.tabBars.buttons["Contacts"].tap()
 <details> 
 <summary>подробнее</summary>
 <a href="https://ibb.co/2tnnTjm"><img src="https://i.ibb.co/qsyyvRX/button-test7.gif" alt="button-test7" width="250"></a>
+</details>
+
+<a href="https://ibb.co/sPbJgm2"><img src="https://i.ibb.co/vBVvcwH/Multiple-Apps.png" alt="Multiple-Apps" width="420"></a>
+
+<b>1. Несколько одинаковых приложений</b>
+
+```swift
+let app1 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp1")
+let app2 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp2")
+app1.launch()
+app2.launch()
+app1.activate()
+app2.activate()
+```
+
+<details> 
+<summary>подробнее</summary>  
+1. В Bundle Identifier дописать в конце, например, "App1"<br>
+<a href="https://ibb.co/k0mf2Q7"><img src="https://i.ibb.co/MpB4kMv/Screenshot-2019-08-11-at-16-06-15.png" alt="Screenshot-2019-08-11-at-16-06-15" width="250"></a>
+
+2. Запустить проект (cmd + R). Будет создана первая копия приложения.
+3. В Bundle Identifier указать в конце, например, "App2"<br>
+
+<a href="https://ibb.co/c19MGHX"><img src="https://i.ibb.co/hyNhPj1/Screenshot-2019-08-11-at-16-13-59.png" alt="Screenshot-2019-08-11-at-16-13-59" width="250"></a>
+
+4. Запустить проект (cmd + R). Будет создана вторая копия приложения.
+
+В итоге на рабочем столе создано два одинаковых приложения.
+
+<a href="https://ibb.co/6D1FLr9"><img src="https://i.ibb.co/F80zCmZ/Multiple-Apps-test1.gif" alt="Multiple-Apps-test1" width="250"></a>
 </details>
