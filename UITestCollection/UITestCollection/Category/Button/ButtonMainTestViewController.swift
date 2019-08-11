@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewButtonViewController: UIViewController {
+class ButtonMainTestViewController: UIViewController {
     
     @IBOutlet weak var firstTestButton: UIButton!
     @IBOutlet weak var secondTestButton: UIButton!

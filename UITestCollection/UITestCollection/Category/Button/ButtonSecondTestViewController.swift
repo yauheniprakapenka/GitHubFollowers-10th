@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondTestViewController: UIViewController {
+class ButtonSecondTestViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var buttonWithoutID: UIButton!
     

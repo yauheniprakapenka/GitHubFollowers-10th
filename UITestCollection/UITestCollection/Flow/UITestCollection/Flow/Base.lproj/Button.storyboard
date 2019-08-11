@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Button View Controller-->
+        <!--Button Main Test View Controller-->
         <scene sceneID="cpD-Tw-jBf">
             <objects>
-                <viewController id="lJ0-TN-ici" customClass="NewButtonViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lJ0-TN-ici" customClass="ButtonMainTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xJe-nW-keu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="3311.594202898551" y="-352.23214285714283"/>
         </scene>
-        <!--Five Test View Controller-->
+        <!--Button Five Test View Controller-->
         <scene sceneID="HmH-0V-XZg">
             <objects>
-                <viewController id="Llg-ei-6Xq" customClass="FiveTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Llg-ei-6Xq" customClass="ButtonFiveTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2a8-Hp-o40">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,10 +279,10 @@
             </objects>
             <point key="canvasLocation" x="4121" y="4"/>
         </scene>
-        <!--Six Test View Controller-->
+        <!--Button Six Test View Controller-->
         <scene sceneID="35e-da-o6f">
             <objects>
-                <viewController id="OLR-Sv-sIg" customClass="SixTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OLR-Sv-sIg" customClass="ButtonSixTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hNg-ro-RFX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="7664" y="15"/>
         </scene>
-        <!--First Test View Controller-->
+        <!--Button First Test View Controller-->
         <scene sceneID="iZi-pp-u1x">
             <objects>
-                <viewController id="mcy-O2-Aky" customClass="FirstTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mcy-O2-Aky" customClass="ButtonFirstTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HGD-9o-BGQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -434,10 +434,10 @@
             </objects>
             <point key="canvasLocation" x="4113.75" y="-711.97183098591552"/>
         </scene>
-        <!--Second Test View Controller-->
+        <!--Button Second Test View Controller-->
         <scene sceneID="yPh-5Z-RPG">
             <objects>
-                <viewController id="W14-TH-RfZ" customClass="SecondTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="W14-TH-RfZ" customClass="ButtonSecondTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8A3-WD-cBP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -484,10 +484,10 @@
             </objects>
             <point key="canvasLocation" x="4823" y="-712"/>
         </scene>
-        <!--Third Test View Controller-->
+        <!--Button Third Test View Controller-->
         <scene sceneID="YtX-ih-5rs">
             <objects>
-                <viewController id="jjX-ck-8NC" customClass="ThirdTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jjX-ck-8NC" customClass="ButtonThirdTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qLO-dN-uOP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -550,10 +550,10 @@
             </objects>
             <point key="canvasLocation" x="5534" y="-706"/>
         </scene>
-        <!--Four Test View Controller-->
+        <!--Button Four Test View Controller-->
         <scene sceneID="Tct-XU-46e">
             <objects>
-                <viewController id="NKc-IN-em6" customClass="FourTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NKc-IN-em6" customClass="ButtonFourTestViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fcm-7s-AVU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

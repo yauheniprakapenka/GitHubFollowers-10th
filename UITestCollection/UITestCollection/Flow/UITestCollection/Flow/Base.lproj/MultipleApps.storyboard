@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ntU-Kc-vry">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multiple Apps Main View Controller-->
+        <scene sceneID="fug-b8-NE6">
+            <objects>
+                <viewController id="ntU-Kc-vry" customClass="MultipleAppsMainViewController" customModule="UITestCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gr7-6t-bfk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nUz-rp-zcU">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwH-zX-efp">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GRD-WF-982">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY8-iu-bIk">
+                                                        <rect key="frame" x="20" y="0.0" width="280" height="30"/>
+                                                        <state key="normal" title="1. Свернуть первое прожение, развернуть второе">
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ZY8-iu-bIk" secondAttribute="trailing" constant="20" id="Nav-sd-cZg"/>
+                                                    <constraint firstAttribute="height" constant="40" id="P6Z-R6-oG8"/>
+                                                    <constraint firstItem="ZY8-iu-bIk" firstAttribute="leading" secondItem="GRD-WF-982" secondAttribute="leading" constant="20" id="Whw-i7-nEZ"/>
+                                                    <constraint firstItem="ZY8-iu-bIk" firstAttribute="top" secondItem="GRD-WF-982" secondAttribute="top" id="ufc-Oy-dzR"/>
+                                                    <constraint firstItem="ZY8-iu-bIk" firstAttribute="centerX" secondItem="GRD-WF-982" secondAttribute="centerX" id="zkb-Fc-1gB"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GRD-WF-982" firstAttribute="leading" secondItem="qwH-zX-efp" secondAttribute="leading" id="0NU-b1-3TQ"/>
+                                            <constraint firstAttribute="height" constant="1000" id="5S8-03-C6p"/>
+                                            <constraint firstAttribute="trailing" secondItem="GRD-WF-982" secondAttribute="trailing" id="Qhl-fd-X7t"/>
+                                            <constraint firstItem="GRD-WF-982" firstAttribute="top" secondItem="qwH-zX-efp" secondAttribute="top" id="kvx-Xe-FEd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qwH-zX-efp" secondAttribute="trailing" id="5ow-lA-Qfg"/>
+                                    <constraint firstAttribute="bottom" secondItem="qwH-zX-efp" secondAttribute="bottom" id="C3b-1R-2SC"/>
+                                    <constraint firstItem="qwH-zX-efp" firstAttribute="top" secondItem="nUz-rp-zcU" secondAttribute="top" id="rOu-Br-jbW"/>
+                                    <constraint firstItem="qwH-zX-efp" firstAttribute="leading" secondItem="nUz-rp-zcU" secondAttribute="leading" id="xFB-cx-9W6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nUz-rp-zcU" firstAttribute="leading" secondItem="NQt-I4-HaE" secondAttribute="leading" id="7nj-k0-dLG"/>
+                            <constraint firstItem="NQt-I4-HaE" firstAttribute="bottom" secondItem="nUz-rp-zcU" secondAttribute="bottom" id="HDb-VS-P3q"/>
+                            <constraint firstItem="nUz-rp-zcU" firstAttribute="top" secondItem="NQt-I4-HaE" secondAttribute="top" id="L8D-ws-Zcc"/>
+                            <constraint firstItem="qwH-zX-efp" firstAttribute="width" secondItem="gr7-6t-bfk" secondAttribute="width" id="fcw-vq-px8"/>
+                            <constraint firstItem="NQt-I4-HaE" firstAttribute="trailing" secondItem="nUz-rp-zcU" secondAttribute="trailing" id="riy-kq-nop"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NQt-I4-HaE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xZ-YB-Dn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595" y="-90"/>
+        </scene>
+    </scenes>
+</document>

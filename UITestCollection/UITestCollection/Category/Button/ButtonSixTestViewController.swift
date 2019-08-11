@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SixTestViewController: UIViewController {
+class ButtonSixTestViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
     
