@@ -1,8 +1,6 @@
 # UITestCollection
 
-<img src="https://create.adobe.com/content/microsites/inspire/en/2016/5/12/discover_digital_illustrator_syd_weiler_s_fascination_with_time_/_jcr_content/article-body/full_width_images_0/image1.img.jpg/1463005937888.jpg" width="600">
-
-<h2><b>Кнопка</b></h2>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/6nbz9gB/Button.png" alt="Button" width="200"></a>
 
 <b>1. Нажать на кнопку по идентификатору</b>
 ```swift
@@ -37,8 +35,7 @@ app.buttons["Button"].firstMatch.tap()
 
 <b>4. Нажать на кнопку в Alert</b>
 
-```swift
-XCTAssert(app.buttons["Two"].waitForExistence(timeout: 3)) // Ожидание появления кнопки
+```swift\\
 app.alerts.buttons["Two"].tap()
 ```
 <details> 
@@ -79,4 +76,35 @@ app.tabBars.buttons["Contacts"].tap()
 <details> 
 <summary>подробнее</summary>
 <a href="https://ibb.co/2tnnTjm"><img src="https://i.ibb.co/qsyyvRX/button-test7.gif" alt="button-test7" width="250"></a>
+</details>
+
+<a href="https://ibb.co/sPbJgm2"><img src="https://i.ibb.co/vBVvcwH/Multiple-Apps.png" alt="Multiple-Apps" width="420"></a>
+
+<b>1. Несколько одинаковых приложений</b>
+
+```swift
+let app1 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp1")
+let app2 = XCUIApplication(bundleIdentifier: "com.yauheniprakapenka.UITestCollectionApp2")
+app1.launch()
+app2.launch()
+app1.activate()
+app2.activate()
+```
+
+<details> 
+<summary>подробнее</summary>  
+  1. В Bundle Identifier дописать в конце, например, "App1"<br>
+<a href="https://ibb.co/k0mf2Q7"><img src="https://i.ibb.co/MpB4kMv/Screenshot-2019-08-11-at-16-06-15.png" alt="Screenshot-2019-08-11-at-16-06-15" width="250"></a>
+
+2. Запустить проект (cmd + R). Будет создана первая копия приложения.
+3. В Bundle Identifier указать в конце, например, "App2"<br>
+
+<a href="https://ibb.co/c19MGHX"><img src="https://i.ibb.co/hyNhPj1/Screenshot-2019-08-11-at-16-13-59.png" alt="Screenshot-2019-08-11-at-16-13-59" width="250"></a>
+
+4. Запустить проект (cmd + R). Будет создана вторая копия приложения.
+5. В итоге на рабочем столе создано два одинаковых приложения. Остается только создать два объекта, указав для каждого свой bundleIdentifier. 
+
+Демонстрация:
+
+<a href="https://ibb.co/6D1FLr9"><img src="https://i.ibb.co/F80zCmZ/Multiple-Apps-test1.gif" alt="Multiple-Apps-test1" width="250"></a>
 </details>
