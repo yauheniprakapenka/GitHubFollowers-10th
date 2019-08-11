@@ -1,8 +1,6 @@
 # UITestCollection
 
-<img src="https://create.adobe.com/content/microsites/inspire/en/2016/5/12/discover_digital_illustrator_syd_weiler_s_fascination_with_time_/_jcr_content/article-body/full_width_images_0/image1.img.jpg/1463005937888.jpg" width="600">
-
-<h2><b>Кнопка</b></h2>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/6nbz9gB/Button.png" alt="Button" width="200"></a>
 
 <b>1. Нажать на кнопку по идентификатору</b>
 ```swift
