@@ -29,7 +29,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY8-iu-bIk">
                                                         <rect key="frame" x="20" y="10" width="280" height="30"/>
-                                                        <state key="normal" title="1. Свернуть первое приложение, развернуть второе">
+                                                        <state key="normal" title="1. Несколько одинаковых приложений">
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>

@@ -25,21 +25,23 @@ class MultipleAppsUITest: XCTestCase {
         
         app1.launch()
         app1.buttons["Несколько приложений"].tap()
-        app1.buttons["1. Свернуть первое приложение, развернуть второе"].tap()
+        app1.buttons["1. Несколько одинаковых приложений"].tap()
         app1.buttons["Первое приложение"].tap()
         
         app2.launch()
         app2.buttons["Несколько приложений"].tap()
-        app2.buttons["1. Свернуть первое приложение, развернуть второе"].tap()
+        app2.buttons["1. Несколько одинаковых приложений"].tap()
         app2.buttons["Второе приложение"].tap()
         
-        sleep(1)
         app1.activate()
-        XCTAssert(app1.staticTexts["Нажато в первом приложении"].waitForExistence(timeout: 5))
-        
         sleep(1)
+        XCTAssert(app1.staticTexts["Нажато в первом приложении"].exists)
+        XCTAssert(!app1.staticTexts["Нажато во втором приложении"].exists)
+        
         app2.activate()
-        XCTAssert(app2.staticTexts["Нажато во втором приложении"].waitForExistence(timeout: 5))
+        sleep(1)
+        XCTAssert(app2.staticTexts["Нажато во втором приложении"].exists)
+        XCTAssert(!app2.staticTexts["Нажато в первом приложении"].exists)
     }
     
 }
