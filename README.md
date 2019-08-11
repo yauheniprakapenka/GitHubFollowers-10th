@@ -93,7 +93,7 @@ app2.activate()
 
 <details> 
 <summary>подробнее</summary>  
-1. В Bundle Identifier дописать в конце, например, "App1"<br>
+  1. В Bundle Identifier дописать в конце, например, "App1"<br>
 <a href="https://ibb.co/k0mf2Q7"><img src="https://i.ibb.co/MpB4kMv/Screenshot-2019-08-11-at-16-06-15.png" alt="Screenshot-2019-08-11-at-16-06-15" width="250"></a>
 
 2. Запустить проект (cmd + R). Будет создана первая копия приложения.
@@ -102,8 +102,9 @@ app2.activate()
 <a href="https://ibb.co/c19MGHX"><img src="https://i.ibb.co/hyNhPj1/Screenshot-2019-08-11-at-16-13-59.png" alt="Screenshot-2019-08-11-at-16-13-59" width="250"></a>
 
 4. Запустить проект (cmd + R). Будет создана вторая копия приложения.
+5. В итоге на рабочем столе создано два одинаковых приложения. Остается только создать два объекта, указав для каждого свой bundleIdentifier. 
 
-В итоге на рабочем столе создано два одинаковых приложения.
+Демонстрация:
 
 <a href="https://ibb.co/6D1FLr9"><img src="https://i.ibb.co/F80zCmZ/Multiple-Apps-test1.gif" alt="Multiple-Apps-test1" width="250"></a>
 </details>
