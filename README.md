@@ -108,3 +108,16 @@ app2.activate()
 
 <a href="https://ibb.co/6D1FLr9"><img src="https://i.ibb.co/F80zCmZ/Multiple-Apps-test1.gif" alt="Multiple-Apps-test1" width="250"></a>
 </details>
+
+<a href="https://ibb.co/Nn9GtfP"><img src="https://i.ibb.co/1Jr47B5/Command-Line.png" alt="Command-Line" width="320"></a>
+
+<b>1. Показать все элементы на экране</b>
+
+```swift
+po print(app.debugDescription)
+```
+<b>2. Показать все кнопки на экране</b>
+
+```swift
+po app.buttons
+```
