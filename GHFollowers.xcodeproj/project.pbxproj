@@ -72,23 +72,55 @@
 		3E82F14123C519F000BFA794 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				3EEFD0EC23C9B78C009B8668 /* Extensions */,
+				3EEFD0EB23C9B73D009B8668 /* Custom Views */,
+				3EEFD0EA23C9B710009B8668 /* Screens */,
+				3EEFD0ED23C9B828009B8668 /* Support */,
+			);
+			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		3EEFD0EA23C9B710009B8668 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3E82F15623C52BAE00BFA794 /* SearchVC.swift */,
+				3E82F15823C52C0500BFA794 /* FavoritesListVC.swift */,
+				3E82F15E23C5F9B500BFA794 /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3EEFD0EB23C9B73D009B8668 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E82F16623C64FC800BFA794 /* GFAlertVC.swift */,
+				3E82F15A23C5BC3E00BFA794 /* GFButton.swift */,
+				3E82F15C23C5C2FC00BFA794 /* GFTextField.swift */,
+				3E82F16223C6437500BFA794 /* GFTitleLabel.swift */,
+				3E82F16423C6471200BFA794 /* GFBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3EEFD0EC23C9B78C009B8668 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFD0E823C9076B009B8668 /* UIVIewController+Ext.swift */,
+				3E82F16023C6416900BFA794 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3EEFD0ED23C9B828009B8668 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				3E82F14223C519F000BFA794 /* AppDelegate.swift */,
 				3E82F14423C519F000BFA794 /* SceneDelegate.swift */,
 				3E82F14B23C519F200BFA794 /* Assets.xcassets */,
 				3E82F14D23C519F200BFA794 /* LaunchScreen.storyboard */,
 				3E82F15023C519F200BFA794 /* Info.plist */,
-				3E82F15623C52BAE00BFA794 /* SearchVC.swift */,
-				3E82F15E23C5F9B500BFA794 /* FollowerListVC.swift */,
-				3EEFD0E823C9076B009B8668 /* UIVIewController+Ext.swift */,
-				3E82F15823C52C0500BFA794 /* FavoritesListVC.swift */,
-				3E82F15A23C5BC3E00BFA794 /* GFButton.swift */,
-				3E82F16223C6437500BFA794 /* GFTitleLabel.swift */,
-				3E82F15C23C5C2FC00BFA794 /* GFTextField.swift */,
-				3E82F16423C6471200BFA794 /* GFBodyLabel.swift */,
-				3E82F16023C6416900BFA794 /* String+Ext.swift */,
-				3E82F16623C64FC800BFA794 /* GFAlertVC.swift */,
 			);
-			path = GHFollowers;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = GHFollowers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = GHFollowers/Info.plist;
+				INFOPLIST_FILE = GHFollowers/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
