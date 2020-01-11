@@ -12,17 +12,17 @@ class GFAlertVC: UIViewController {
     
     let containerView = UIView()
     let titleLabel = GFTitleLabel(textAligment: .center, fontSize: 20)
-    let messsageLabel = GFBodyLabel(textAligment: .center)
+    let messsageLabel = GFMessageLabel(textAligment: .center)
     let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
-    var message: String?
+    var messageTitle: String?
     var buttonTitle: String?
     
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
         self.alertTitle = title
-        self.message = message
+        self.messageTitle = message
         self.buttonTitle = buttonTitle
     }
     
@@ -67,6 +67,19 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    func configureMessageLabel() {
+        containerView.addSubview(messsageLabel)
+        messsageLabel.text = messageTitle ?? "Unable to complete request"
+        messsageLabel.numberOfLines = 4
+        
+        NSLayoutConstraint.activate([
+            messsageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            messsageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
+            messsageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            messsageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
+        ])
+    }
+    
     func configureActionButton() {
         containerView.addSubview(actionButton)
         actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
@@ -77,19 +90,6 @@ class GFAlertVC: UIViewController {
             actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
             actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
             actionButton.heightAnchor.constraint(equalToConstant: 44)
-        ])
-    }
-    
-    func configureMessageLabel() {
-        containerView.addSubview(messsageLabel)
-        messsageLabel.text = message ?? "Unable to complete request"
-        messsageLabel.numberOfLines = 4
-        
-        NSLayoutConstraint.activate([
-            messsageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            messsageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            messsageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
-            messsageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
         ])
     }
     
