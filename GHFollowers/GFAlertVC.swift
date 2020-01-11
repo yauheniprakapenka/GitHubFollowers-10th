@@ -11,8 +11,8 @@ import UIKit
 class GFAlertVC: UIViewController {
     
     let containerView = UIView()
-    let titleLabel = GFTitleLabel(texAligment: .center, fontSize: 20)
-    let messsageTitle = GFBodyLabel(texAligment: .center)
+    let titleLabel = GFTitleLabel(textAligment: .center, fontSize: 20)
+    let messsageLabel = GFBodyLabel(textAligment: .center)
     let actionButton = GFButton(backgroundColor: .systemPink, title: "Ok")
     
     var alertTitle: String?
@@ -35,6 +35,8 @@ class GFAlertVC: UIViewController {
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         configureContainerView()
         configureTitleLabel()
+        configureActionButton()
+        configureMessageLabel()
     }
     
     func configureContainerView() {
@@ -65,4 +67,33 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    func configureActionButton() {
+        containerView.addSubview(actionButton)
+        actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
+        actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+        
+        NSLayoutConstraint.activate([
+            actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -20),
+            actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
+            actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            actionButton.heightAnchor.constraint(equalToConstant: 44)
+        ])
+    }
+    
+    func configureMessageLabel() {
+        containerView.addSubview(messsageLabel)
+        messsageLabel.text = message ?? "Unable to complete request"
+        messsageLabel.numberOfLines = 4
+        
+        NSLayoutConstraint.activate([
+            messsageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+            messsageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
+            messsageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            messsageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
+        ])
+    }
+    
+    @objc func dismissVC() {
+        dismiss(animated: true)
+    }
 }

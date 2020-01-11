@@ -14,7 +14,7 @@ extension UIViewController {
             let alertVC = GFAlertVC(title: title, message: message, buttonTitle: buttonTitle)
             alertVC.modalPresentationStyle = .overFullScreen
             alertVC.modalTransitionStyle = .crossDissolve
-            self.present(alertVC, animated: true)
+            self.present(alertVC, animated: true)    
         }
     }
 }

@@ -19,9 +19,9 @@ class GFBodyLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(texAligment: NSTextAlignment) {
+    init(textAligment: NSTextAlignment) {
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
+        self.textAlignment = textAligment
         configure()
     }
     
