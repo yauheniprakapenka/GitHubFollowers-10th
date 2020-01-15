@@ -16,7 +16,6 @@ class FollowerListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
-        configureCollectionView()
         getFollowers()
     }
     
@@ -44,7 +43,7 @@ class FollowerListVC: UIViewController {
                 print("followers count = \(followers.count)")
                 print(followers)
             case .failure(let error):
-                self.presentGFAlertOnMainThread(title:  "Bad stuff happend", message: error.rawValue, buttonTitle: "Ok")
+                self.presentGFAlertOnMainThread(title: "Bad stuff happend", message: error.rawValue, buttonTitle: "Ok")
             }
         }
     }

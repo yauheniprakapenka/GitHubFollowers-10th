@@ -19,10 +19,10 @@ class GFAlertVC: UIViewController {
     var messageTitle: String?
     var buttonTitle: String?
     
-    init(title: String, message: String, buttonTitle: String) {
+    init(alertTitle: String, messageTitle: String, buttonTitle: String) {
         super.init(nibName: nil, bundle: nil)
-        self.alertTitle = title
-        self.messageTitle = message
+        self.alertTitle = alertTitle
+        self.messageTitle = messageTitle
         self.buttonTitle = buttonTitle
     }
     

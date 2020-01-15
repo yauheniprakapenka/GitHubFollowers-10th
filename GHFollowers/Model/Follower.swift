@@ -10,5 +10,5 @@ import Foundation
 
 struct Follower: Codable {
     var login: String
-    var avatarUrl: String // а приходит avatar_url
+    var avatarUrl: String // приходит avatar_url, сконвертирует с помощью decoder.keyDecodingStrategy = .convertFromSnakeCase
 }
