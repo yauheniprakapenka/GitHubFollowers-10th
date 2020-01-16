@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Follower: Codable {
+struct Follower: Codable, Hashable {
     var login: String
     var avatarUrl: String // приходит avatar_url, сконвертирует с помощью decoder.keyDecodingStrategy = .convertFromSnakeCase
 }
