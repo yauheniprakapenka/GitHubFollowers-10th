@@ -34,7 +34,7 @@ class NetworkManager {
             }
             
             guard let data = data else {
-                completed(.failure(.invaliidData))
+                completed(.failure(.invalidData))
                 return
             }
             
@@ -44,7 +44,7 @@ class NetworkManager {
                 let followers = try decoder.decode([Follower].self, from: data)
                 completed(.success(followers))
             } catch {
-                completed(.failure(.invaliidData))
+                completed(.failure(.invalidData))
             }
         }
         
