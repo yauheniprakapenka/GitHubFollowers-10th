@@ -48,7 +48,6 @@ class NetworkManager {
                 completed(.failure(.invalidData))
             }
         }
-        
         task.resume()
     }
     
@@ -85,7 +84,6 @@ class NetworkManager {
                 completed(.failure(.dataProcessingError))
             }
         }
-        
         task.resume()
     }
 }
