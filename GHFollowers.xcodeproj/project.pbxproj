@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E28CCD523D0F05F0087523C /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E28CCD423D0F05F0087523C /* UIHelper.swift */; };
+		3E36F9D923E759C8003E4641 /* GFIteminfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36F9D823E759C8003E4641 /* GFIteminfoVC.swift */; };
 		3E82F14323C519F000BFA794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E82F14223C519F000BFA794 /* AppDelegate.swift */; };
 		3E82F14523C519F000BFA794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E82F14423C519F000BFA794 /* SceneDelegate.swift */; };
 		3E82F14C23C519F200BFA794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E82F14B23C519F200BFA794 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		3E28CCD423D0F05F0087523C /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		3E36F9D823E759C8003E4641 /* GFIteminfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFIteminfoVC.swift; sourceTree = "<group>"; };
 		3E82F13F23C519F000BFA794 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E82F14223C519F000BFA794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E82F14423C519F000BFA794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				3E82F16623C64FC800BFA794 /* GFAlertVC.swift */,
 				3ED5D77A23DC33850062E6EC /* GFUserInfoHeaderVC.swift */,
+				3E36F9D823E759C8003E4641 /* GFIteminfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				3E82F14323C519F000BFA794 /* AppDelegate.swift in Sources */,
 				3EEFD0F223C9CE0E009B8668 /* User.swift in Sources */,
 				3EEFD0FB23CB2491009B8668 /* FollowerCell.swift in Sources */,
+				3E36F9D923E759C8003E4641 /* GFIteminfoVC.swift in Sources */,
 				3ED5D77D23DC33BE0062E6EC /* GFSecondaryTitleLabel.swift in Sources */,
 				3E82F16723C64FC800BFA794 /* GFAlertVC.swift in Sources */,
 				3EB83EE423E70CE800E25016 /* GFItemInfoView.swift in Sources */,
