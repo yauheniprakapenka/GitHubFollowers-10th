@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GFMessageLabel: UILabel {
+class GFBodyLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
