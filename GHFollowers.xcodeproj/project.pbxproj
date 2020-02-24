@@ -11,6 +11,7 @@
 		3E0B54872403A0E100A4B873 /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B54862403A0E100A4B873 /* GFFollowerItemVC.swift */; };
 		3E0B548A2403BB1F00A4B873 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B54892403BB1F00A4B873 /* Date+Ext.swift */; };
 		3E0B548E240419E900A4B873 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B548D240419E900A4B873 /* PersistanceManager.swift */; };
+		3E0B5490240431B600A4B873 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B548F240431B600A4B873 /* FavoriteCell.swift */; };
 		3E28CCD523D0F05F0087523C /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E28CCD423D0F05F0087523C /* UIHelper.swift */; };
 		3E36F9D923E759C8003E4641 /* GFItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E36F9D823E759C8003E4641 /* GFItemInfoVC.swift */; };
 		3E82F14323C519F000BFA794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E82F14223C519F000BFA794 /* AppDelegate.swift */; };
@@ -46,6 +47,7 @@
 		3E0B54862403A0E100A4B873 /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		3E0B54892403BB1F00A4B873 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		3E0B548D240419E900A4B873 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		3E0B548F240431B600A4B873 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		3E28CCD423D0F05F0087523C /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		3E36F9D823E759C8003E4641 /* GFItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoVC.swift; sourceTree = "<group>"; };
 		3E82F13F23C519F000BFA794 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEFD0FA23CB2491009B8668 /* FollowerCell.swift */,
+				3E0B548F240431B600A4B873 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				3EEFD0FB23CB2491009B8668 /* FollowerCell.swift in Sources */,
 				3E0B5485240396A100A4B873 /* GFRepoItemVC.swift in Sources */,
 				3E36F9D923E759C8003E4641 /* GFItemInfoVC.swift in Sources */,
+				3E0B5490240431B600A4B873 /* FavoriteCell.swift in Sources */,
 				3ED5D77D23DC33BE0062E6EC /* GFSecondaryTitleLabel.swift in Sources */,
 				3E0B548E240419E900A4B873 /* PersistanceManager.swift in Sources */,
 				3E82F16723C64FC800BFA794 /* GFAlertVC.swift in Sources */,
